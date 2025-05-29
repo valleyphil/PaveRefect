@@ -31,7 +31,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/33be65b8-9633-4858-b169-5d06aa65fe90.png" 
               alt="PavéRéfect" 
-              className="h-22 w-auto"
+              className="h-19 w-auto"
             />
           </div>
 
