@@ -1,3 +1,4 @@
+
 import { ArrowRight, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
@@ -13,7 +14,7 @@ const Hero = () => {
                 </span>
                 <span className="text-green-600 block">Philippe Jean</span>
                 
-                <span className="block mt-4">Votre pavé uni</span>
+                <span className="block mt-8">Votre pavé uni</span>
                 <span className="text-green-600 block">retrouvé, durable</span>
                 et écoresponsable
               </h1>
