@@ -20,7 +20,7 @@ const services = [
   {
     icon: <Clock className="text-green-600" size={40} />,
     title: "Scellant",
-    description: "Application de scellant protecteur pour redonner une aspect neuf a votre pavé."
+    description: "Application de scellant protecteur pour redonner un aspect neuf à votre pavé."
   }
 ];
 

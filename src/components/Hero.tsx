@@ -9,8 +9,12 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                <span className="text-green-600 block">PavéRéfect Philippe Jean</span>
-                Votre pavé uni
+                <span className="block">
+                  Pavé<span className="text-green-600">Ré</span>fect
+                </span>
+                <span className="text-green-600 block">Philippe Jean</span>
+                
+                <span className="block mt-4">Votre pavé uni</span>
                 <span className="text-green-600 block">retrouvé, durable</span>
                 et écoresponsable
               </h1>
