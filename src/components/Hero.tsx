@@ -5,8 +5,8 @@ const Hero = () => {
     <section id="accueil" className="pt-32 pb-20 bg-gradient-to-br from-green-50 to-gray-50 min-h-screen flex items-center">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-16 animate-fade-in">
-            <div className="space-y-8">
+          <div className="space-y-8 animate-fade-in">
+            <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 <span className="block">
                   Pavé<span className="text-black">R</span><span className="text-green-600">é</span>fect
@@ -23,7 +23,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <CheckCircle className="text-green-600 flex-shrink-0" size={20} />
                 <span className="text-gray-700">Garantie de 2 ans sur le nivellement</span>
