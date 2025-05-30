@@ -9,8 +9,8 @@ const Footer = () => {
           {/* Logo et description */}
           <div className="space-y-4">
             <img 
-              src="/lovable-uploads/33be65b8-9633-4858-b169-5d06aa65fe90.png" 
-              alt="PavéRéfect" 
+              src="/lovable-uploads/cc76582f-ef6e-43e6-9a67-02e393a24088.png" 
+              alt="PavéRéfect Philippe Jean" 
               className="h-12 w-auto brightness-0 invert"
             />
             <p className="text-gray-300 leading-relaxed">
@@ -75,7 +75,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © 2024 PavéRéfect. Tous droits réservés.
+              © 2024 PavéRéfect Philippe Jean. Tous droits réservés.
             </div>
             <div className="text-gray-400 text-sm">
               Garantie 2 ans • Estimation gratuite • Service résidentiel
