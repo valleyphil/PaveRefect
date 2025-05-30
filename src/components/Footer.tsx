@@ -43,8 +43,8 @@ const Footer = () => {
               <li>• Relevage et nivellement</li>
               <li>• Nettoyage haute pression</li>
               <li>• Jointement au sable polymère</li>
-              <li>• Application de scellant (bientôt)</li>
-              <li>• Réfection de murets (bientôt)</li>
+              <li>• Application de scellant</li>
+              <li>• Réfection de murets</li>
             </ul>
           </div>
 
