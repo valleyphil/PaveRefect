@@ -3,22 +3,22 @@ import { ArrowRight, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="accueil" className="pt-32 pb-20 bg-gradient-to-br from-green-50 to-gray-50 min-h-screen flex items-center">
+    <section id="accueil" className="pt-24 md:pt-32 pb-20 bg-gradient-to-br from-green-50 to-gray-50 min-h-screen flex items-center">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-fade-in">
-            <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+          <div className="space-y-6 md:space-y-8 animate-fade-in">
+            <div className="space-y-3 md:space-y-4">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
                 <span className="block">
                   Pavé<span className="text-black">R</span><span className="text-green-600">é</span>fect
                 </span>
-                <span className="text-green-600 block">Philippe Jean</span>
+                <span className="text-green-600 block text-xl md:text-2xl lg:text-3xl xl:text-4xl mt-1">Philippe Jean</span>
                 
-                <span className="block mt-8">Votre pavé uni</span>
+                <span className="block mt-6 md:mt-8">Votre pavé uni</span>
                 <span className="text-green-600 block">retrouvé, durable</span>
                 et écoresponsable
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
                 Redonnez vie à vos trottoirs et stationnements en pavé uni grâce à notre expertise locale à 
                 <span className="font-semibold text-green-600"> Salaberry-de-Valleyfield</span> et ses environs.
               </p>
