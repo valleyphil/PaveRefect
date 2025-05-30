@@ -1,11 +1,11 @@
 
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Linkedin, Instagram, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Logo et description */}
           <div className="space-y-4">
             <img 
@@ -26,9 +26,9 @@ const Footer = () => {
               <Phone size={18} />
               <span>450-288-5564</span>
             </a>
-            <a href="mailto:valleyphil125@gmail.com" className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors">
+            <a href="mailto:paverefect@gmail.com" className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors">
               <Mail size={18} />
-              <span>valleyphil125@gmail.com</span>
+              <span>paverefect@gmail.com</span>
             </a>
             <div className="flex items-center space-x-3 text-gray-300">
               <MapPin size={18} />
@@ -46,6 +46,29 @@ const Footer = () => {
               <li>• Application de scellant (bientôt)</li>
               <li>• Réfection de murets (bientôt)</li>
             </ul>
+          </div>
+
+          {/* Réseaux sociaux */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold mb-4">Suivez-nous</h3>
+            <div className="space-y-3">
+              <a href="#" className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors">
+                <Facebook size={18} />
+                <span>Facebook</span>
+              </a>
+              <a href="#" className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors">
+                <Instagram size={18} />
+                <span>Instagram</span>
+              </a>
+              <a href="#" className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors">
+                <Linkedin size={18} />
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors">
+                <Youtube size={18} />
+                <span>YouTube / Reels</span>
+              </a>
+            </div>
           </div>
         </div>
 

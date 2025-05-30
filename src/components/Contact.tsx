@@ -1,5 +1,5 @@
 
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Facebook, Linkedin, Instagram, Youtube } from 'lucide-react';
 import { useState } from 'react';
 
 const Contact = () => {
@@ -31,7 +31,7 @@ Cordialement,
 ${formData.nom}
     `);
     
-    window.location.href = `mailto:valleyphil125@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:paverefect@gmail.com?subject=${subject}&body=${body}`;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -168,13 +168,13 @@ ${formData.nom}
                   </div>
                 </a>
 
-                <a href="mailto:valleyphil125@gmail.com" className="flex items-center space-x-4 p-4 rounded-lg hover:bg-green-50 transition-colors group">
+                <a href="mailto:paverefect@gmail.com" className="flex items-center space-x-4 p-4 rounded-lg hover:bg-green-50 transition-colors group">
                   <div className="bg-green-100 p-3 rounded-full group-hover:bg-green-200 transition-colors">
                     <Mail className="text-green-600" size={24} />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">Courriel</div>
-                    <div className="text-green-600">valleyphil125@gmail.com</div>
+                    <div className="text-green-600">paverefect@gmail.com</div>
                   </div>
                 </a>
 
@@ -197,6 +197,42 @@ ${formData.nom}
                     <div className="text-gray-600">Estimation sous 24-48h</div>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Réseaux sociaux */}
+            <div className="bg-white rounded-2xl shadow-xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                Suivez-nous
+              </h3>
+              <div className="grid grid-cols-2 gap-4">
+                <a href="#" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 transition-colors group">
+                  <div className="bg-blue-100 p-2 rounded-full group-hover:bg-blue-200 transition-colors">
+                    <Facebook className="text-blue-600" size={20} />
+                  </div>
+                  <span className="font-medium text-gray-700">Facebook</span>
+                </a>
+                
+                <a href="#" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 transition-colors group">
+                  <div className="bg-pink-100 p-2 rounded-full group-hover:bg-pink-200 transition-colors">
+                    <Instagram className="text-pink-600" size={20} />
+                  </div>
+                  <span className="font-medium text-gray-700">Instagram</span>
+                </a>
+                
+                <a href="#" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 transition-colors group">
+                  <div className="bg-blue-100 p-2 rounded-full group-hover:bg-blue-200 transition-colors">
+                    <Linkedin className="text-blue-600" size={20} />
+                  </div>
+                  <span className="font-medium text-gray-700">LinkedIn</span>
+                </a>
+                
+                <a href="#" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 transition-colors group">
+                  <div className="bg-red-100 p-2 rounded-full group-hover:bg-red-200 transition-colors">
+                    <Youtube className="text-red-600" size={20} />
+                  </div>
+                  <span className="font-medium text-gray-700">YouTube</span>
+                </a>
               </div>
             </div>
 
