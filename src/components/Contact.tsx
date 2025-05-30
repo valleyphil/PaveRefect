@@ -1,6 +1,6 @@
 
 import { Phone, Mail, MapPin, Clock, Facebook, Linkedin, Instagram, Youtube } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +10,18 @@ const Contact = () => {
     projet: '',
     message: ''
   });
+
+  // Focus automatique sur le champ nom si l'URL contient #contact
+  useEffect(() => {
+    if (window.location.hash === '#contact') {
+      const nomField = document.getElementById('nom-complet');
+      if (nomField) {
+        setTimeout(() => {
+          nomField.focus();
+        }, 500); // Petit délai pour s'assurer que le scroll est terminé
+      }
+    }
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -63,12 +75,12 @@ ${formData.nom}
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="nom" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="nom-complet" className="block text-sm font-medium text-gray-700 mb-2">
                     Nom complet *
                   </label>
                   <input
                     type="text"
-                    id="nom"
+                    id="nom-complet"
                     name="nom"
                     required
                     value={formData.nom}
