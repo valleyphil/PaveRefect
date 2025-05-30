@@ -1,4 +1,3 @@
-
 import { ArrowRight, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
@@ -10,7 +9,7 @@ const Hero = () => {
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 <span className="block">
-                  Pavé<span className="text-green-600">Ré</span>fect
+                  Pavé<span className="text-black">R</span><span className="text-green-600">é</span>fect
                 </span>
                 <span className="text-green-600 block">Philippe Jean</span>
                 
