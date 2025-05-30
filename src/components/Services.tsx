@@ -19,8 +19,8 @@ const services = [
   },
   {
     icon: <Clock className="text-green-600" size={40} />,
-    title: "Services Additionnels",
-    description: "Bientôt disponibles : application de scellant protecteur et réfection complète de murets en pavé."
+    title: "Scellant",
+    description: "Application de scellant protecteur pour redonner une aspect neuf a votre pavé."
   }
 ];
 
