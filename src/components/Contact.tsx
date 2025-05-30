@@ -206,7 +206,7 @@ ${formData.nom}
                 Suivez-nous
               </h3>
               <div className="grid grid-cols-2 gap-4">
-                <a href="#" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 transition-colors group">
+                <a href="https://www.facebook.com/profile.php?id=61576602792197&locale=fr_CA" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 transition-colors group">
                   <div className="bg-blue-100 p-2 rounded-full group-hover:bg-blue-200 transition-colors">
                     <Facebook className="text-blue-600" size={20} />
                   </div>

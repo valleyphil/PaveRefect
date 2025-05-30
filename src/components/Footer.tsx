@@ -52,7 +52,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold mb-4">Suivez-nous</h3>
             <div className="space-y-3">
-              <a href="#" className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61576602792197&locale=fr_CA" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors">
                 <Facebook size={18} />
                 <span>Facebook</span>
               </a>
