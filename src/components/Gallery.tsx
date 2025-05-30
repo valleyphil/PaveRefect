@@ -1,4 +1,7 @@
 
+import { useState } from 'react';
+import { Dialog, DialogContent, DialogTrigger } from './ui/dialog';
+
 const beforeAfterImages = [
   {
     before: "/lovable-uploads/36e45d6e-4328-44a6-992a-47e0c3b9e831.png",
@@ -38,23 +41,37 @@ const Gallery = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {beforeAfterImages.map((image, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            >
-              <div className="relative">
-                <img 
-                  src={image.before} 
-                  alt={image.title}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-lg font-semibold">{image.title}</h3>
-                  <p className="text-sm text-gray-200">Avant / Après</p>
+            <Dialog key={index}>
+              <DialogTrigger asChild>
+                <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
+                  <div className="relative">
+                    <img 
+                      src={image.before} 
+                      alt={image.title}
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 text-white">
+                      <h3 className="text-lg font-semibold">{image.title}</h3>
+                      <p className="text-sm text-gray-200">Avant / Après</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl w-full p-0 bg-transparent border-none">
+                <div className="relative">
+                  <img 
+                    src={image.before} 
+                    alt={image.title}
+                    className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
+                  />
+                  <div className="absolute bottom-4 left-4 bg-black/70 text-white p-3 rounded-lg">
+                    <h3 className="text-xl font-semibold">{image.title}</h3>
+                    <p className="text-sm text-gray-200">Cliquez en dehors pour fermer</p>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
           ))}
         </div>
 
